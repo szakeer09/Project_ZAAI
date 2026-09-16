@@ -38,9 +38,9 @@ export class AppHome extends LitElement {
 
       <main>
         <div id="welcomeBar">
-          <wa-card id="welcomeCard">
+          <wa-card id="agent_5201m2j1dy1qeyfrjb2ang8azt8h">
             <div slot="header">
-              <h2>${this.message}</h2>
+              <h2>ZAAI AI Personal Assistant</h2>
             </div>
 
             <p>
@@ -49,14 +49,10 @@ export class AppHome extends LitElement {
                 documentation</a>.
             </p>
 
-            <p id="mainInfo">
-              Welcome to the
-              <a href="https://pwabuilder.com">PWABuilder</a>
-              pwa-starter! Be sure to head back to
-              <a href="https://pwabuilder.com">PWABuilder</a>
-              when you are ready to ship this PWA to the Microsoft Store, Google Play
-              and the Apple App Store!
-            </p>
+             <!-- ELEVENLABS VOICE AGENT WIDGET -->
+            <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+            <elevenlabs-convai agent-id="agent_5201m2j1dy1qeyfrjb2ang8azt8h"></elevenlabs-convai>
+
 
             <wa-button @click="${this.increment}">
               Increment: ${this.counter}
